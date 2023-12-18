@@ -1,33 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/lena');
 
 
-  body{
+body {
   overflow-x: hidden;
   padding: 0;
   margin: 0;
 }
-.header{
 
-  div{
+.header {
+
+  div {
     border-radius: 20px;
     background-color: #07717a;
     display: flex;
     justify-content: space-between;
     padding: 0.4vw 1vw;
-    .networks{
+
+    .networks {
       height: auto;
       width: 1.5vw;
 
     }
-    #images{
+
+    #images {
       width: 8%;
       margin-top: 0.4vw;
       cursor: pointer;
-      img{
+
+      img {
         height: 80%;
       }
     }
-    .email{
+
+    .email {
       margin-top: 15px;
       color: white;
       font-size: 1vw;
@@ -35,36 +41,41 @@
     }
 
   }
-  .logo{
+
+  .logo {
     display: flex;
     align-items: center;
     padding: 0.5vw 4vw 0.3vw;
     background-color: white;
-    #btns{
+
+    #btns {
       padding-top: 1vw;
       background-color: white;
       width: 30%;
-      p{
+
+      p {
         font-size: 1vw;
-        font-family: Montserrat;
+        font-family: "Montserrat", sans-serif;
         font-weight: 700;
 
       }
 
-      }
+    }
+
     .btn {
       outline: none;
       cursor: pointer;
-      border-radius: 13px;
+      border-radius: 11px;
       padding: 0.6vw 0.8vw;
       margin-top: 0.4vw;
       font-size: 1vw;
-      font-family: Montserrat;
+      font-family: "Montserrat", sans-serif;
       font-weight: 500;
       background-color: #5D7A50;
       border: solid 1px #5D7A50;
       color: white;
-      &:hover{
+
+      &:hover {
         background-color: teal;
         transition: 0.5s;
       }
@@ -72,16 +83,152 @@
 
     }
 
-    .main-logo{
+    .main-logo {
       height: 80%;
     }
   }
-  .main-header{
-    margin: 0;
-    padding: 0;
-    img{
-      width: 100vw;
 
+  .main-header {
+    background-color: white;
+    padding: 0;
+    display: flex;
+
+    .font {
+      position: absolute;
+      width: 100vw;
+      z-index: 0;
+    }
+
+    #logo-date {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1px;
+      padding: 0 0 0 3vw;
+
+      p:first-of-type {
+        font-family: "Lena", sans-serif;
+        font-size: 3vw;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 5.5vw;
+      }
+
+      p {
+        font-family: "Lena", sans-serif;
+        font-size: 4.7vw;
+        font-weight: 400;
+        text-align: left;
+        margin: 0.1vw;
+        line-height: 6.5vw;
+
+      }
+
+      button {
+        outline: none;
+        cursor: pointer;
+        border-radius: 11px;
+        padding: 1.7vw 0.8vw;
+        margin-top: 0.4vw;
+        font-size: 3vw;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        background-color: #5D7A50;
+        border: solid 1px #5D7A50;
+        color: white;
+        width: 30vw;
+
+        &:hover {
+          background-color: teal;
+          transition: 0.5s;
+        }
+      }
+    }
+
+    .logo-date {
+      z-index: 1;
+    }
+
+    .date-img {
+      z-index: 1;
+      margin-top: 1px;
+      background-color: rgba(0, 0, 0, 0);
+
+      img:first-of-type {
+        right: 10.5vw;
+        top: 13vw;
+        position: absolute;
+        width: 23vw;
+        z-index: 2;
+      }
+
+      img {
+        position: absolute;
+        width: 23vw;
+        right: 20vw;
+        top: 28vw;
+
+      }
+    }
+  }
+}
+
+.main {
+  margin-top: 7vw;
+  padding: 0.4vw 3.5vw;
+
+  .main-title {
+    font-family: "Lena", sans-serif;
+    font-size: 3vw;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 5.5vw;
+
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .card {
+      background-color: #07717a;
+      width: 24%;
+      border-radius: 12px;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 88%;
+        height: 100%;
+      }
+
+      .title-card {
+        font-family: "Lena", sans-serif;
+        font-size: 2vw;
+        font-weight: 500;
+        text-align: left;
+        padding: 0.3vw 0;
+        margin: 1vw 0 1.5vw 1vw;
+        z-index: 5 !important;
+        position: relative;
+        color: white;
+      }
+
+      .card-txt {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.2vw;
+        text-align: left;
+        padding: 0 0;
+        line-height: 2vw;
+        z-index: 5 !important;
+        position: relative;
+        margin: 1vw 0 3.5vw 1vw;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
     }
   }
 }
