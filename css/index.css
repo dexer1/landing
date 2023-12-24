@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/lena");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 body {
   overflow-x: hidden;
   padding: 0;
   margin: 0;
 }
 
-.header div {
-  border-radius: 20px;
+.social {
+  position: sticky;
+  top: 0;
+  z-index: 15;
   background-color: #07717a;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,24 +20,33 @@ body {
           justify-content: space-between;
   padding: 0.4vw 1vw;
 }
-.header div .networks {
-  height: auto;
-  width: 1.5vw;
-}
-.header div #images {
+.social #images {
   width: 8%;
   margin-top: 0.4vw;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
-.header div #images img {
+.social #images .networks {
+  height: auto;
+  width: 1.5vw;
+  padding: 0 0.5vw;
+}
+.social #images img {
   height: 80%;
 }
-.header div .email {
+.social .email {
   margin-top: 15px;
   color: white;
   font-size: 1vw;
   margin-right: 4vw;
 }
+
 .header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,16 +56,27 @@ body {
           align-items: center;
   padding: 0.5vw 4vw 0.3vw;
   background-color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .header .logo #btns {
   padding-top: 1vw;
   background-color: white;
-  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .header .logo #btns p {
   font-size: 1vw;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  padding: 0 2vw;
+  cursor: pointer;
 }
 .header .logo .btn {
   outline: none;
@@ -214,4 +237,204 @@ body {
   color: white;
   text-transform: uppercase;
   font-weight: 500;
+}
+.main .logo-video {
+  font-family: "Lena", sans-serif;
+  font-size: 3vw;
+  font-weight: 500;
+  margin-top: 9vw;
+}
+.main .video-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 28vw;
+}
+.main .video-text img {
+  cursor: pointer;
+  height: 100%;
+}
+.main .video-text .txt-for-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2vw;
+  padding: 0 0 0 3vw;
+  width: 100%;
+}
+.main .video-text .txt-for-video p {
+  background-color: #F5E489;
+  padding: 2.66% 5%;
+  margin: 2% 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 1vw;
+  font-weight: 700;
+}
+.main .video-text .txt-for-video p:first-of-type {
+  margin-top: 0;
+}
+.main .video-text .txt-for-video p:last-of-type {
+  margin-bottom: 0;
+}
+.main .logo-card {
+  font-family: "Lena", sans-serif;
+  font-size: 3vw;
+  font-weight: 500;
+  margin-top: 9vw;
+}
+.main .wrapper-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .wrapper-cards .card {
+  background-color: #07717a;
+  width: 24%;
+  border-radius: 12px;
+  position: relative;
+}
+.main .wrapper-cards .card img:first-of-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 88%;
+  height: 100%;
+}
+.main .wrapper-cards .card img:last-of-type {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 115%;
+}
+.main .wrapper-cards .card .title-card1 {
+  font-family: "Lena", sans-serif;
+  font-size: 2vw;
+  font-weight: 500;
+  text-align: left;
+  padding: 0.3vw 0;
+  margin: 1vw 0 0 1vw;
+  z-index: 5 !important;
+  position: relative;
+  color: white;
+}
+.main .wrapper-cards .card .card-txt1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1vw;
+  text-align: left;
+  padding: 0 0;
+  line-height: 2vw;
+  z-index: 5 !important;
+  position: relative;
+  margin: 0 0 3.5vw 1vw;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.main .wrapper-cards .btn-cards {
+  cursor: pointer;
+  width: 24%;
+  height: 5vw;
+  border-radius: 11px;
+  font-size: 2vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background-color: #5D7A50;
+  border: solid 1px #5D7A50;
+  color: white;
+  margin-top: 5.5vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.main .wrapper-cards .btn-cards:hover {
+  background-color: #07717a;
+}
+.main .banner {
+  background-color: #F5E489;
+  margin-top: 10vw;
+  padding: 5vw 5vw 5vw 5vw;
+  border-radius: 0.8vw;
+}
+.main .banner .banner-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Lena", sans-serif;
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: #07717a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 9vw;
+}
+.footer .footer-img {
+  width: 3%;
+}
+.footer .footer-img img {
+  margin: 0 0.5vw;
+}
+.footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 1vw;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 2vw;
+  cursor: pointer;
+  color: white;
+}
+.footer div p {
+  margin: 1vw 0.5vw;
+}
+.footer button {
+  outline: none;
+  border: none;
+  background-color: #07717a;
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 0.1vw;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
 }
